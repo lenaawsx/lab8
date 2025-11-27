@@ -1,0 +1,109 @@
+/* ====== Общие стили страницы ====== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1b4332; /* тёмно-зелёный фон страницы */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* ====== Основной контейнер ====== */
+div {
+  width: 100%;
+  max-width: 500px;
+  background: #2d6a4f; /* насыщенный зелёный */
+  padding: 30px 25px;
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== Заголовок ====== */
+h1 {
+  text-align: center;
+  color: #d8f3dc;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* ====== Поле ввода ====== */
+input {
+  padding: 12px;
+  width: 70%;
+  font-size: 16px;
+  border: 1px solid #95d5b2;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f0fff4; /* светлый фон для контраста */
+  color: #1b4332;            /* тёмный текст */
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input::placeholder {
+  color: #95d5b2; /* цвет подсказки */
+}
+
+input:focus {
+  border-color: #52b788;
+  box-shadow: 0 0 8px #95d5b2;
+}
+
+/* ====== Кнопки ====== */
+button {
+  padding: 12px 18px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #40916c;
+  color: #f0fff4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #52b788;
+  transform: translateY(-2px);
+}
+
+/* ====== Список задач ====== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+/* ====== Отдельная задача ====== */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #40916c; /* тёмно-зелёная карточка */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  font-size: 16px;
+  color: #f0fff4;
+  transition: transform 0.2s, background 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  background: #52b788;
+}
+
+/* ====== Кнопка удаления задачи ====== */
+li button {
+  background-color: #1b4332;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+li button:hover {
+  background-color: #95d5b2;
+  color: #1b4332;
+}
